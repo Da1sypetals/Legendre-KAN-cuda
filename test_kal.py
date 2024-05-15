@@ -79,6 +79,8 @@ for epoch in range(10):
     print(
         f"Epoch {epoch + 1}, Val Loss: {val_loss}, Val Accuracy: {val_accuracy}"
     )
+    # print(f'tanh_scale = {model.layer1.tanh_scale.view(-1)[:10]}')
+    # print(f'tanh_bias = {model.layer1.tanh_bias.view(-1)[:10]}')
 
 
 
