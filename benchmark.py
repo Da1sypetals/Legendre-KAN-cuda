@@ -6,7 +6,7 @@ import torch
 from torch import nn
 from dataset import create_dataset
 
-from cuLegKan.layer import LegendreKANLayer
+from cuLegKan.layer import BetterLayer as LegendreKANLayer
 from original.LegKanLayer import KAL_Layer
 
 from tqdm import tqdm
