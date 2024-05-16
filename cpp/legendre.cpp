@@ -23,7 +23,7 @@ torch::Tensor leg_cuda_fwd(torch::Tensor x, int degree)
 
     // create leg tensor
     torch::Tensor leg = torch::ones({degree + 1, batch_size, in_feats},
-                                    at::device(at::kCUDA).dtype(at::kFloat));
+                                    torch::device(torch::kCUDA).dtype(torch::kFloat));
 
     float *leg_ptr = leg.data_ptr<float>();
 

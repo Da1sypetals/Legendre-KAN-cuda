@@ -1,8 +1,10 @@
+import os
+os.environ['CUDA_HOME'] = '/usr/local/cuda-12'
+
+
 from setuptools import find_packages, setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
-import os
 
-os.environ['CUDA_HOME'] = '/usr/local/cuda-12'
 
 
 setup(
